@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url(../font/Manrope/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url(../font/Manrope/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url(../font/Manrope/Manrope-SemiBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Manrope-Regular";
+}
+
+body {
+  background: #F9F9F9;
+}
+
+:root {
+  --base: #0E50E9;
+  --text: #2D2D2D;
+}
+
+.title-text {
+  font-size: 18px;
+  font-family: "Manrope-SemiBold";
+  line-height: 23.4px;
+  text-align: center;
+}
+
+.title-subtext {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--text);
+}
+
+.glob-link {
+  padding: 7px 16px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Manrope-Medium";
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav__logo .logo {
+  width: 90px;
+  height: 60px;
+  background: #D9D9D9;
+  margin-right: 25px;
+}
+.nav__logo .nav__logo-link {
+  color: var(--text);
+}
+.nav__content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 2px solid gray;
+}
+.nav__content .nav__list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav__content .nav__list-link {
+  color: var(--text);
+}
+.nav__content .nav__list-link:hover {
+  color: var(--base);
+}
+.nav__content .nav__list .link__lang {
+  color: var(--base);
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0 90px;
+}
+.header .blok {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.header .blok__left {
+  border-radius: 16px;
+  height: 400px;
+  max-width: 680px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px 0px;
+  background: white;
+}
+.header .blok__right {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .blok__right .blok__top {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #DEDEDE 100%), radial-gradient(37.37% 37.37% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(213, 213, 213, 0.2) 100%);
+  border-radius: 16px;
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.header .blok__right .blok__top div {
+  display: flex;
+}
+.header .blok__right .blok__top div:nth-child(1) {
+  position: relative;
+}
+.header .blok__right .blok__top div:nth-child(1) img:nth-child(2) {
+  position: absolute;
+  left: 55px;
+  bottom: 0;
+}
+.header .blok__right .blok__top div:nth-child(3) {
+  position: absolute;
+  right: -10px;
+}
+.header .blok__right .blok__top .top-center {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+.header .blok__right .blok__bottom {
+  width: 100%;
+  height: 190px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF, #fd6fff);
+}
+.header .blok__right .blok__bottom .bottom__left {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .blok__right .blok__bottom .bottom__left .title-subtext {
+  margin: 6px 25px;
+}
+.header .blok__right .blok__bottom .bottom__right {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */
