@@ -10,6 +10,26 @@
   font-family: "Manrope-SemiBold";
   src: url(../font/Manrope/Manrope-SemiBold.ttf);
 }
+@media (max-width: 1024px) {
+  .nav__logo .logo {
+    width: 80px !important;
+    height: 50px !important;
+    background: #000;
+  }
+}
+@media (max-width: 768px) {
+  .nav__logo .logo {
+    width: 80px !important;
+    height: 50px !important;
+    background: #000;
+  }
+  .nav__content .nav__list {
+    display: none !important;
+  }
+  .nav__content .menu-btn {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +46,16 @@ body {
 :root {
   --base: #0E50E9;
   --text: #2D2D2D;
+}
+
+.d-none {
+  display: none;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .title-text {
@@ -57,21 +87,28 @@ body {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: white;
   width: 100%;
+  height: 60px;
 }
 .nav__logo {
   display: flex;
   align-items: center;
   position: relative;
+  gap: 25px;
 }
 .nav__logo .logo {
   width: 90px;
   height: 60px;
   background: #D9D9D9;
-  margin-right: 25px;
 }
 .nav__logo .nav__logo-link {
   color: var(--text);
@@ -95,8 +132,49 @@ body {
 .nav__content .nav__list-link:hover {
   color: var(--base);
 }
-.nav__content .nav__list .link__lang {
+.nav__content .nav__list + div {
+  display: flex;
+  gap: 15px;
+}
+.nav__content .link__lang {
   color: var(--base);
+  font-weight: 600;
+}
+
+.showAnimate {
+  animation: showAnim 0.5s linear;
+}
+
+.hideAnimate {
+  animation: hideAnim 0.5s linear;
+}
+
+.menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid black;
+  z-index: -1;
+}
+.menu__content {
+  padding: 20px 0;
+}
+.menu__content .menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.menu__content .menu__list-link {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  color: var(--text);
+  border-radius: 16px;
 }
 
 .header {
@@ -122,6 +200,10 @@ body {
   justify-content: space-between;
   padding: 40px 40px 0px;
   background: white;
+}
+.header .blok__left a {
+  color: var(--base);
+  font-weight: 600;
 }
 .header .blok__right {
   max-width: 480px;
@@ -194,4 +276,21 @@ body {
   position: absolute;
   right: 0px;
   bottom: 0;
+}
+
+@keyframes showAnim {
+  from {
+    transform: translateY(-108%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes hideAnim {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-108%);
+  }
 }/*# sourceMappingURL=main.css.map */

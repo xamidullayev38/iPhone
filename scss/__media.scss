@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+    .nav{
+        &__logo{
+            .logo{
+                width: 80px !important;
+                height: 50px !important;
+                background: #000;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .nav{
+        &__logo{
+            .logo{
+                width: 80px !important;
+                height: 50px !important;
+                background: #000 ;
+            }
+        }
+        &__content{
+            .nav__list{
+                display: none !important;
+                
+            }
+            .menu-btn{
+                display: block;
+            }
+        }
+    }
+}
