@@ -29,7 +29,16 @@
   .nav__content .menu-btn {
     display: block;
   }
+  .header .blok {
+    display: none !important;
+  }
 }
+.swiper {
+  width: 400px;
+  height: 100px;
+  margin: 100px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,16 +49,12 @@
 }
 
 body {
-  background: #F9F9F9;
+  background: lightgreen;
 }
 
 :root {
   --base: #0E50E9;
   --text: #2D2D2D;
-}
-
-.d-none {
-  display: none;
 }
 
 .menu-btn {
@@ -92,12 +97,12 @@ body {
 
 .nav {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   background: white;
+  padding-top: 20px;
   width: 100%;
-  height: 60px;
 }
 .nav__logo {
   display: flex;
@@ -155,7 +160,8 @@ body {
   left: 0;
   width: 100%;
   border-bottom: 2px solid black;
-  z-index: -1;
+  background: whitesmoke;
+  z-index: 2;
 }
 .menu__content {
   padding: 20px 0;
@@ -179,35 +185,55 @@ body {
 
 .header {
   width: 100%;
-  padding: 20px 0 90px;
+  padding-top: 20px;
 }
 .header .blok {
+  margin-top: 90px;
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  gap: 20px;
 }
 .header .blok__left {
   border-radius: 16px;
   height: 400px;
-  max-width: 680px;
-  width: 100%;
+  width: 680px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 40px 40px 0px;
+  overflow: hidden;
   background: white;
+  position: relative;
+}
+.header .blok__left-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 20px;
 }
 .header .blok__left a {
+  text-align: center;
   color: var(--base);
   font-weight: 600;
 }
-.header .blok__right {
-  max-width: 480px;
+.header .blok__left .box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   width: 100%;
+  margin-top: 60px;
+}
+.header .blok__left .box img {
+  min-width: 56px;
+  width: 100%;
+}
+.header .blok__right {
+  width: 480px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -216,7 +242,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #DEDEDE 100%), radial-gradient(37.37% 37.37% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(213, 213, 213, 0.2) 100%);
   border-radius: 16px;
   width: 100%;
-  height: 190px;
+  height: 50%;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -253,7 +279,7 @@ body {
 }
 .header .blok__right .blok__bottom {
   width: 100%;
-  height: 190px;
+  height: 50%;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -274,8 +300,12 @@ body {
 }
 .header .blok__right .blok__bottom .bottom__right {
   position: absolute;
-  right: 0px;
-  bottom: 0;
+  right: -30px;
+  bottom: -5px;
+}
+.header .blok__right .blok__bottom .bottom__right img {
+  width: 200px;
+  height: 150px;
 }
 
 @keyframes showAnim {
@@ -293,4 +323,7 @@ body {
   to {
     transform: translateY(-108%);
   }
+}
+.d-none {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */

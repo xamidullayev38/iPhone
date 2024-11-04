@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone bor</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     
@@ -59,8 +62,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="blok">
+        <div class="container">
+            <div class="blok d-none">
                 <div class="blok__left">
                     <h2 class="blok__left-title">
                         Оригинальная продукция Apple в Ташкенте
@@ -108,11 +111,33 @@
                     </div>
                 </div>
             </div>
-        </div>   -->
+            <div class="blok-slider">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
+        </div>  
     </header>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
