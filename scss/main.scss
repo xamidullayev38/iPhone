@@ -10,8 +10,8 @@
     font-family: "Manrope-Regular";
 }
 body{
-    // background: #F9F9F9;
-    background: lightgreen;
+    background: #F9F9F9;    
+    // background: lightgreen;
 
 }
 :root {
@@ -51,7 +51,7 @@ body{
 
 }
 .container{
-    max-width: 1180px;
+    max-width: 1190px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -145,7 +145,50 @@ body{
     z-index: 2;
 
 }
-
+.card-advert{
+    background: #EEF7FF;
+    width: 280px;
+    height: 365px;
+    padding: 30px 30px 25px 30px;
+    border-radius: 12px;
+    color: #EEF7FF;
+    .advert-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        img{
+            height: 180px;
+            width: 220px;
+        }
+        .advert-title{
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            text-align: center;
+            color: var(--text);
+        }
+        a{
+            
+                margin-bottom: 6px;
+                font-size: 400px;
+                font-size: 12px;
+                line-height: 16px;
+                color: var(--text);
+        }
+        .advert-link{
+            width: 220px;
+            padding: 12px 41px;
+            color: white;
+            background: var(--base);
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
 
 
 .header{
@@ -283,7 +326,63 @@ body{
         }
     }
 }
-
+main{
+    .blok1{
+        margin: 90px 0;
+        width: 100%;
+        .blok1__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .blok1-top,
+            .block1-bottom{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;                
+            }
+            .blok1-card{
+                background: white;
+                width: 202px;
+                height: 365px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 15px;
+                border-radius: 12px;
+                .card-title{
+                    color: var(--text);
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                }
+                .card-item{
+                    .card-subtitle{
+                        display: flex;
+                        gap: 3px;
+                        font-size: 12px;
+                        font-size: 12px;
+                        line-height: 15px;
+                        span{
+                            color: #828282;
+                        }
+                    }
+                }
+                .card-text{
+                    font-size: 18px;
+                    line-height: 23px;
+                    font-weight: 600;
+                    color: var(--base);
+                }
+                
+            }
+        }
+    }
+}
 
 @keyframes showAnim {
     from{

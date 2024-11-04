@@ -49,7 +49,7 @@
 }
 
 body {
-  background: lightgreen;
+  background: #F9F9F9;
 }
 
 :root {
@@ -89,7 +89,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1190px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
@@ -181,6 +181,50 @@ body {
   text-align: center;
   color: var(--text);
   border-radius: 16px;
+}
+
+.card-advert {
+  background: #EEF7FF;
+  width: 280px;
+  height: 365px;
+  padding: 30px 30px 25px 30px;
+  border-radius: 12px;
+  color: #EEF7FF;
+}
+.card-advert .advert-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.card-advert .advert-content img {
+  height: 180px;
+  width: 220px;
+}
+.card-advert .advert-content .advert-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+}
+.card-advert .advert-content a {
+  margin-bottom: 6px;
+  font-size: 400px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text);
+}
+.card-advert .advert-content .advert-link {
+  width: 220px;
+  padding: 12px 41px;
+  color: white;
+  background: var(--base);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .header {
@@ -306,6 +350,59 @@ body {
 .header .blok__right .blok__bottom .bottom__right img {
   width: 200px;
   height: 150px;
+}
+
+main .blok1 {
+  margin: 90px 0;
+  width: 100%;
+}
+main .blok1 .blok1__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .blok1 .blok1__content .blok1-top,
+main .blok1 .blok1__content .block1-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .blok1 .blok1__content .blok1-card {
+  background: white;
+  width: 202px;
+  height: 365px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 12px;
+}
+main .blok1 .blok1__content .blok1-card .card-title {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+main .blok1 .blok1__content .blok1-card .card-item .card-subtitle {
+  display: flex;
+  gap: 3px;
+  font-size: 12px;
+  font-size: 12px;
+  line-height: 15px;
+}
+main .blok1 .blok1__content .blok1-card .card-item .card-subtitle span {
+  color: #828282;
+}
+main .blok1 .blok1__content .blok1-card .card-text {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 600;
+  color: var(--base);
 }
 
 @keyframes showAnim {
