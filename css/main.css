@@ -77,6 +77,13 @@ body {
   color: var(--text);
 }
 
+.blok-title {
+  font-size: 32px;
+  line-height: 41px;
+  color: var(--text);
+  font-family: "Manrope-SemiBold";
+}
+
 .glob-link {
   padding: 7px 16px;
   border-radius: 6px;
@@ -225,6 +232,40 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 21px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s linear all;
+}
+.slider::after, .slider::before {
+  width: 5%;
+  background: rgba(0, 0, 0, 0.6862745098);
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  opacity: 0;
+  transition: 0.3s linear all;
+}
+.slider::after {
+  content: "<";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.slider::before {
+  content: ">";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.slider:hover::after, .slider:hover::before {
+  opacity: 1;
 }
 
 .header {
@@ -403,6 +444,72 @@ main .blok1 .blok1__content .blok1-card .card-text {
   line-height: 23px;
   font-weight: 600;
   color: var(--base);
+}
+main .blok2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  margin: 90px 0;
+}
+main .blok2 .blok2-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+main .blok2 .blok2-slider .slider__card {
+  width: 205px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+main .blok2 .blok2-slider .slider__card p {
+  font-family: "Manrope-SemiBold";
+  color: var(--text);
+}
+main .blok3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+main .blok3__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main .blok3__card {
+  width: 275px;
+  height: 315px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: wh;
+}
+main .blok3__card .box {
+  padding: 15px 0px;
+}
+main .blok3__card .box p {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Manrope-SemiBold";
+  margin-bottom: 10px;
+}
+main .blok3__card .box p:last-child {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 @keyframes showAnim {
