@@ -24,13 +24,15 @@
                 
             }
             .menu-btn{
-                display: block;
+                display: block !important;
             }
         }
     }
     .header{
         .blok{
-            display: none !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

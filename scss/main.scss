@@ -134,7 +134,7 @@ body{
         padding: 20px 0;
         .menu__list{
             display: flex;
-            align-items: center;
+               align-items: center;
             flex-wrap: wrap;
             justify-content: space-evenly;
             gap: 10px;  
@@ -243,12 +243,13 @@ body{
         margin-top: 90px;
         width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         gap: 20px;
         &__left{
             border-radius: 16px;
             height: 400px;
-            width: 680px;
+            max-width: 680px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -279,17 +280,18 @@ body{
                 width: 100%;
                 margin-top: 60px;
                 img {
-                    min-width: 56px;
+                    max-width: 135px;
                     width: 100%;
                 }
             }
         }
         &__right{
-            width: 480px;
+            max-width: 480px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 20px;
-
+            overflow: hidden;
             .blok__top{
                 background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #DEDEDE 100%),radial-gradient(37.37% 37.37% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(213, 213, 213, 0.2) 100%);
                 border-radius: 16px;
@@ -495,7 +497,81 @@ main{
             }
         }
     }
+    .blok4{
+        margin: 90px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+        .blok4-content{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            .blok4-card{
+                width: 280px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 7px;
+                padding: 15px;
+                border-radius: 12px;
+                background: white;
+                .blok4-card-title{
+                    font-size: 12px;
+                    line-height: 15.6px;
+                    font-weight: 600;
+                    text-align: center;
+                    letter-spacing: 1px;
+                }
+                .card-item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
 }
+.footer{
+    width: 100%;
+    .footer-content{
+        padding: 50px 0px 20px;
+        border-top: 2px solid gray;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 50px;
+        justify-content: center;
+        .footer-card{
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &:first-child{
+                max-width: 137px;
+                .footer-logo{
+                    width: 90px;
+                    height: 60px;
+                    background: #D9D9D9;
+                }
+            }
+            &:last-child{
+                max-width: 180px;
+                .title-subtext{
+
+                    text-align: justify ;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 @keyframes showAnim {
     from{
